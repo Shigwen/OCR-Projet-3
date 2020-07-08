@@ -371,6 +371,67 @@ h2:hover {
 	margin: auto 0 auto 30px;
 }
 
+/* Voici le code utilisé par le site Animate.css pour obtenir l'effet de wiggle demandé. Il est ici appelé shakeX. 
+Je le mets ici pour que mon correcteur n'ait pas à aller le chercher, ou ne se dise pas que je l'ai juste "copié collé au pif" sans le comprendre. 
+Croyez moi que j'ai bien perdu 2h à trouver comment appliquer :hover au webkit, au point de me dire que ça aurait été plus rapide de le faire moi-même... */
+
+/* ShakeX (site : https://animate.style/) */
+
+:root {
+	--animate-duration: 1s;
+	--animate-delay: 1s;
+	--animate-repeat: 1;
+}
+
+@keyframes shakeX {
+	from,
+	to {
+		transform: translate3d(0, 0, 0);
+	}
+
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+		transform: translate3d(-10px, 0, 0);
+	}
+
+	20%,
+	40%,
+	60%,
+	80% {
+		transform: translate3d(10px, 0, 0);
+	}
+}
+
+
+.animate__shakeX:hover {
+	animation-name: shakeX;
+	animation-duration: 1s;
+}
+
+
+/* Prochainement */
+
+.comingsoon {
+	display: flex;
+	width: 400px;
+	height: 80px;
+	margin: 0 auto;
+	margin-bottom: 60px;
+	background-color: #1D9977;
+	border-radius: 20px;
+	text-align: center;
+}
+
+.comingsoon p {
+	font-size: 2rem;
+	color: #F3D410;
+	margin: auto;
+}
+
+
 /* afficher le nom du restaurant en bas de page */
 
 #bottom {
