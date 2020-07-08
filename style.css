@@ -351,11 +351,12 @@ footer {
 
 /*     RESPONSIVE     */
 
-@media screen and (max-width: 1000px) {
+@media (max-width: 1000px) {
 
 	.liste_menus {
 		width: 100%;
 		max-width: 1000;
 		flex-direction: column;
+		align-items: center;
 	}
 }
