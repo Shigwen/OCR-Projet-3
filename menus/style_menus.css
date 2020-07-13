@@ -377,12 +377,6 @@ Croyez moi que j'ai bien perdu 2h à trouver comment appliquer :hover au webkit,
 
 /* ShakeX (site : https://animate.style/) */
 
-:root {
-	--animate-duration: 1s;
-	--animate-delay: 1s;
-	--animate-repeat: 1;
-}
-
 @keyframes shakeX {
 	from,
 	to {
@@ -404,7 +398,6 @@ Croyez moi que j'ai bien perdu 2h à trouver comment appliquer :hover au webkit,
 		transform: translate3d(10px, 0, 0);
 	}
 }
-
 
 .animate__shakeX:hover {
 	animation-name: shakeX;

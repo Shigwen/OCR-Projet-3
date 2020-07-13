@@ -193,12 +193,6 @@ Croyez moi que j'ai bien perdu 2h à trouver comment appliquer :hover au webkit,
 
 /* ShakeX (site : https://animate.style/) */
 
-:root {
-	--animate-duration: 1s;
-	--animate-delay: 1s;
-	--animate-repeat: 1;
-}
-
 @keyframes shakeX {
 	from,
 	to {
@@ -355,7 +349,7 @@ footer {
 
 	.liste_menus {
 		width: 100%;
-		max-width: 1000;
+		max-width: 1000px;
 		flex-direction: column;
 		align-items: center;
 	}
